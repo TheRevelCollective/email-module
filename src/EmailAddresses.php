@@ -68,7 +68,7 @@ class EmailAddresses
         $this->repository->saveEmailAddress($address);
     }
 
-    protected function getMxRecord($hostname): ?string
+    protected function getMxRecord(string $hostname): ?string
     {
         if ($hostname === 'revolutionbarsgroup.com') {
             return 'cluster5.eu.messagelabs.com';
