@@ -1,0 +1,16 @@
+EmailAddresses:
+  class: Rbg\Email\EmailAddresses
+RbgEmail:
+  class: Rbg\Email\Email
+  parameters:
+    - $mail.transports
+    - "@Locator"
+Mailer:
+  class: Rbg\Email\Factory\MailerFactory
+  parameters:
+    - $email.dsn
+    - "@EventDispatcher"
+TwigEmail:
+  class: Rbg\Email\Factory\TwigRendererFactory
+  parameters:
+    - $twig.path

@@ -1,0 +1,12 @@
+{% apply inky_to_html|inline_css(source('email/foundation-email.css')) %}
+    <container>
+        <wrapper>
+            {{ content|raw }}
+            <row class="footer">
+                <columns><p style="font-size:12px;"><em>&copy; Revolution Bars Group {{ 'now'|date('Y') }}</em></p>
+                </columns>
+            </row>
+        </wrapper>
+        <img src="https://bookings.revolution-bars.co.uk/email/?id=__TRACKING_CODE__" alt="RBG"/>
+    </container>
+{% endapply %}

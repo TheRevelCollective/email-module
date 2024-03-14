@@ -1,0 +1,31 @@
+{
+  "name": "rbg/email",
+  "description": "E-mail module for R-Cloud microservices",
+  "type": "library",
+  "require": {
+    "php": ">=8.1",
+    "rbg/database": "^1.0",
+    "aws/aws-sdk-php": "^3.300",
+    "twig/twig": "^3.8",
+    "symfony/mailer": "^7.0",
+    "symfony/amazon-mailer": "^7.0",
+    "symfony/twig-bridge": "^7.0",
+    "rbg/hydrator": "^1.0",
+    "rbg/contracts": "^1.0",
+    "rbg/utilities": "^1.0",
+    "psr/container": "^2.0",
+    "pimple/pimple": "^3.5",
+    "rbg/core": "^1.0",
+    "twig/inky-extra": "^3.8",
+    "twig/cssinliner-extra": "^3.8"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10",
+    "phpstan/phpstan": "1.10.35"
+  },
+  "autoload": {
+    "psr-4": {
+      "Rbg\\Email\\": "src/"
+    }
+  }
+}
