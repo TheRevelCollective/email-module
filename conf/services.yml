@@ -17,3 +17,4 @@ TwigEmail:
   class: Rbg\Email\Factory\TwigRendererFactory
   parameters:
     - $twig.path
+    - $twig-email.options
