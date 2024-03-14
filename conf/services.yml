@@ -3,8 +3,11 @@ EmailAddresses:
 RbgEmail:
   class: Rbg\Email\Email
   parameters:
-    - $mail.transports
-    - "@Locator"
+    - "@Mailer"
+    - :Rbg\Email\Repository\EmailRepository
+    - "@Hydrator"
+    - "@TwigEmail"
+    - "@EmailAddresses"
 Mailer:
   class: Rbg\Email\Factory\MailerFactory
   parameters:
