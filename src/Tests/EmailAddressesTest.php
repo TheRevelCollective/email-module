@@ -81,6 +81,7 @@ class EmailAddressesTest extends TestCase
         $mockEmail->setEmail('test@test.com');
         $mockEmail->setValid(true);
         $mockEmail->setLastChecked($date);
+        $mockEmail->setInvalidReason(null);
         $this->repository->expects($this->once())
             ->method('saveEmailAddress')
             ->with($mockEmail);
