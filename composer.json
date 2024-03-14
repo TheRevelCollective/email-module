@@ -27,5 +27,11 @@
     "psr-4": {
       "Rbg\\Email\\": "src/"
     }
-  }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.pkg.jetbrains.space/revolutionbarsgroup/p/r-cloud/rbg-composer/"
+    }
+  ]
 }
