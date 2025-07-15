@@ -1,5 +1,5 @@
 {
-  "name": "trc/email",
+  "name": "TheRevelCollective/email",
   "description": "E-mail module for R-Cloud microservices",
   "type": "library",
   "require": {
