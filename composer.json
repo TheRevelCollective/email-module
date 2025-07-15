@@ -1,5 +1,5 @@
 {
-  "name": "therevelcollective/email",
+  "name": "rbg/email",
   "description": "E-mail module for R-Cloud microservices",
   "type": "library",
   "require": {
@@ -30,8 +30,24 @@
   },
   "repositories": [
     {
-      "type": "composer",
-      "url": "https://composer.pkg.jetbrains.space/revolutionbarsgroup/p/r-cloud/rbg-composer/"
+      "type": "vcs",
+      "url": "git@github.com:TheRevelCollective/hydrator-module.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:TheRevelCollective/utilities-module.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:TheRevelCollective/database-module.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:TheRevelCollective/contracts-module.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:TheRevelCollective/core-module.git"
     }
   ]
 }
