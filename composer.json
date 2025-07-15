@@ -1,5 +1,5 @@
 {
-  "name": "rbg/email",
+  "name": "trc/email",
   "description": "E-mail module for R-Cloud microservices",
   "type": "library",
   "require": {
